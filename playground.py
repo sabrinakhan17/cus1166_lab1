@@ -14,6 +14,8 @@ myname = input("What is your name: ")
 print("Hello "+ str(myname))
 print("Hello %s" % myname)
 
+print("Variable Checking")
+
 i = 120
 print(f"Variable i has the value {i}")
 
@@ -25,6 +27,8 @@ print(f"Variable b has the value {b}")
 
 n = None
 print(f"Variable n has the value of {n}")
+
+print("Done Variable Checking")
 
 # tuple
 
@@ -49,9 +53,13 @@ print(s)
 grades = {"Tom" : "A", "Mark": "B-"}
 grades["Tom"]
 grades["Anna"] = "F"
-
+print("\n")
+print('output of dictionary')
+print(grades)
 # Create an empty dictionary .
+print("empty Dictionary")
 mydictionary = dict()
+
 
 #conditionals
 
@@ -64,6 +72,7 @@ else:
     print("The number x is zero")
 
 #loops
+
 for i in range(5):
     print(i)
 
@@ -71,30 +80,13 @@ for i_idx, i_value in enumerate(range(2,10)):
     print(f"{i_idx} - {i_value}" )
 
 #defining and using functions
-print(' let check if the input is even ')
-input = input('Pick a number')
-input = int(input)
+
+print(" let check if the input is even ")
+input = int(input("Pick a number"))
 def is_even(input):
     if (input % 2) == 0:
         return True
     else:
         return False
+        
 print(is_even(input))
-#Defining classes
-class Book:
-    def __init__(self, title="Software Engineering", isbn=""):
-        self.title = title
-        self.isbn = isbn
-    def printBook(self):
-        print(self.title + ", " + self.isbn)
-
-#file: mymodule.helper_utils
-# A function define in the module.
-def square(x):
-    return x*x
-# method to execute file is run from command line.
-def main():
-    pass
-
-if __name__ == "__main__":
-        main()
